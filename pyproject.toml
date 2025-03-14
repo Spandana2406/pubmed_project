@@ -1,18 +1,15 @@
-[project]
-name = "pubmed-project"
+[tool.poetry]
+name = "pubmed_project"
 version = "0.1.0"
 description = "Fetch research papers from PubMed and filter by non-academic authors."
-authors = [
-    {name = "Spandana",email = "chimutaspandana@gmail.com"}
-]
+authors = ["Spandana <chimutaspandana@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.9,<3.14"
 packages = [{ include = "pubmed_project" }]
-dependencies = [
-    "requests (>=2.32.3,<3.0.0)",
-    "pandas (>=2.2.3,<3.0.0)"
-]
 
+[tool.poetry.dependencies]
+python = ">=3.9,<3.14"
+requests = "^2.32.3"
+pandas = "^2.2.3"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
